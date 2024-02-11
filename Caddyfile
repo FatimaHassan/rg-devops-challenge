@@ -7,3 +7,8 @@
 :80 {
   reverse_proxy http-dummy-service:8080
 }
+
+:2019 {
+  # Enable the Prometheus metrics endpoint
+  metrics /metrics
+}
